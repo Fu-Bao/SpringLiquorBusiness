@@ -1,0 +1,33 @@
+.button {
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    background-image:url("/img/checkbox.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    
+.button:checked {
+    background-image:url("/img/checkbox_checked.svg");
+}
+
+.blue-button {
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    background-image:url("/img/blue_checkbox.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.blue-button:checked {
+    background-image:url("/img/blue_checkbox_checked.svg");
+}
