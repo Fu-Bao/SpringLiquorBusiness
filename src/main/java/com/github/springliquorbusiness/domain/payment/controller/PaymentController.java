@@ -1,4 +1,4 @@
-package com.github.springliquorbusiness.domain.payment;
+package com.github.springliquorbusiness.domain.payment.controller;
 
 
 import org.springframework.stereotype.Controller;
