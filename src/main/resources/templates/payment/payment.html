@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lane="ko">
+    <head>
+        <title>결제하기</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="stylesheet" href="/index/button.css" />
+        <link rel="stylesheet" href="/index/font.css" />
+    </head>
+    <body>
+        <div class="relative w-full h-12 text-center">
+            <div class="pt-3">
+                <p class="pretendard-mid">결제하기</p>
+            </div>
+
+            <div class="self-center absolute right-4 top-3">
+                <img src="/index/close.svg" alt="닫기" class="w-6 h-6" />
+            </div>
+        </div>
+
+        <div class="py-3 pl-4">
+            <p class="pretendard-sb text-[18px]">상품을 구매합니다</p>
+        </div>
+
+        <div class="p-4">
+            <div class="flex">
+                <img src="/index/Rectangle 3468166.png" width="48px" height="48px" />
+
+                <div class=" ml-3">
+                    <p class="pretendard-reg">상품명 소주 상품명</p>
+                    <p class="pretendard-sb mt-1 text-[16px]">40,000원</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-2 bg-[#F4F4F4]"></div>
+
+        <div class="px-4 py-6">
+            <p class="pretendard-mid">배송지</p>
+
+            <p class="pretendard-reg underline mt-[20px] text-[#666666]">배송지 추가</p>
+        </div>
+
+        <div class="h-2 bg-[#F4F4F4]"></div>
+
+        <div class="px-4 py-6">
+            <div class="flex justify-between">
+                <p class="pretendard-mid">배송지</p>
+                <p class="pretendard-reg underline text-[#666666]">변경</p>
+            </div>
+
+            <div>
+                <p class="pretendard-reg mt-[20px] text-[#444444]">김민제 · 01012345678</p>
+                <p class="pretendard-reg text-[#444444]">대구광역시 달서구 조암로 6길 20(월성푸르지오) 101동 1111호</p>
+            </div>
+        </div>
+
+        <div class="h-2 bg-[#F4F4F4]"></div>
+
+        <div class="pt-6">
+            <div class="flex justify-between ml-4">
+                <p class="text-[16px]">안전결제 수단</p>
+                <div class="flex mr-4 mt-[-1px]">
+                    <p class="pretendard-mid text-[15px] mr-2">카드결제</p>
+                    <img src="/index/arrow-dropdown-A.svg" width="16px" />
+                </div>
+            </div>
+
+            <div class="ml-[15px] mr-4 mt-5 grid grid-cols-2 gap-2">
+                <div class="flex justify-center items-center h-[45px] border-[1px] border-[#E6E6E7] rounded-[6px]">
+                    <p class="pretendard-mid text-[14px] text-[#444444]">카드결제</p>
+                </div>
+
+                <div class="flex justify-center items-center h-[45px] border-[1px] border-[#E6E6E7] rounded-[6px]">
+                    <p class="pretendard-mid text-[14px] text-[#444444]">무통장입금</p>
+                </div>
+
+                <div class="flex justify-center items-center h-[45px] border-[1px] border-[#E6E6E7] rounded-[6px]">
+                    <p class="pretendard-mid text-[14px] text-[#444444]">카카오페이</p>
+                </div>
+
+                <div class="relative flex justify-center items-center h-[45px] border-[1px] border-[#E6E6E7] rounded-[6px]">
+                    <p class="pretendard-mid text-[14px] text-[#444444]">휴대폰결제</p>
+                    <div class="cursor-pointer absolute right-1 top-[-4px] border-[1px] border-[#558EFC] rounded-[10px] bg-white px-2 py-[2px]">
+                        <p class="pretendard-sb text-[10px] text-[#558EFC]">혜택</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 혜택 없을땐 걍 빼면 딱 맞음 -->
+            <div class="bg-[#FFF7F6] mx-4 mt-4  h-[88px] px-4 py-6 rounded-lg">
+                <div class="flex justify-between">
+                    <div>
+                        <p class="pretendard-mid text-[12px] text-[#111111]">혜택 지급 Comming Soon</p>
+                        <p class="pretendard-reg text-[12px] text-[#666666] mt-3">• 조건없이 결제금액의 10% 즉시 지급!</p>
+                    </div>
+                    <div class="flex items-center h-4">
+                        <p class="pretendard-mid text-[11px] text-[#333333]">자세히</p>
+                        <img src="/index/arrow-more.svg" width="16px" height="16px" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-2 bg-[#F4F4F4] mt-6"></div>
+
+            <div class="mx-4 my-6">
+                <div>
+                    <div class="flex items-center">
+                        <p class="pretendard-mid text-[#111111] text-[16px]">최종 결제 금액</p>
+                        <p class="ml-3 pretendard-sb text-[#FC6955] text-[20px]">43,000원</p>
+                    </div>
+
+                    <hr class="my-6 bg-[#E6E6E7]">
+
+                    <div class="flex gap-6">
+                        <div class="pretendard-reg text-[#999999] grid gap-4">
+                            <p>상품금액</p>
+                            <p>배송비</p>
+                        </div>
+
+                        <div class="pretendard-reg text-[#444444] grid gap-4">
+                            <p>40,000원</p>
+                            <p>3,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="p-4 flex justify-between">
+            <div class="flex items-center">
+                <input type="checkbox" class="button w-[30px] h-[30px]">
+                <p class="pretendard-reg ml-2 text-[#444444] text-[14px]">상품정보 및 결제 대행 서비스 이용약관 동의</p>
+            </div>
+            <img src="/index/arrow-dropdown-A.svg" class="w-6 h-6 " />
+        </div>
+
+        <div class="bg-[#F8F8F8] px-4 py-5">
+            <p class="pretendard-reg text-[12px] text-[#999999]">개인 마켓의 모든 거래 상품들에 대해 아이디제이디(IDJD)는 통신판매중개자로서 거래 당사자가 아니며, 판매 회원과 구매 회원간의 상품거래 정보 및 거래에 관여하지 않고 어떠한 의무와 책임도 부담하지 않습니다.</p>
+        </div>
+
+        <div class="mx-4 my-2 bg-[#E6E6E7] py-[17px] rounded-[6px] flex justify-center">
+            <div class="flex gap-3">
+                <p class="pretendard-sb text-white text-[15px]">총 1개</p>
+                <img src="/index/Line 222.svg" />
+                <p class="pretendard-sb text-white text-[15px]">43,000원 결제</p>
+            </div>
+        </div>
+
+        <div class="mx-4 my-2 bg-[#FC6955] py-[17px] rounded-[6px] flex justify-center">
+            <div class="flex gap-3">
+                <p class="pretendard-sb text-[#FFDBD6] text-[15px]">총 1개</p>
+                <img src="/index/Line 222.svg" />
+                <div class="flex items-center">
+                    <p class="pretendard-sb text-white">43,000</p>
+                    <p class="pretendard-mid text-white">원 결제</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
