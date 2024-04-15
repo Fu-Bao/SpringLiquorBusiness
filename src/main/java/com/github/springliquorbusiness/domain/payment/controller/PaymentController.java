@@ -20,5 +20,8 @@ public class PaymentController {
         return "payment/payment_info";
     }
 
-
+    @GetMapping("/delivery")
+    public String paymentDelivery() {
+        return "payment/payment_delivery";
+    }
 }
