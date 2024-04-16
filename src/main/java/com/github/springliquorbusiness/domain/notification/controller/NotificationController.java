@@ -9,7 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class NotificationController {
 
     @GetMapping("")
-    public String notificationPage() {
+    public String notificationUserPage() {
         return "notification/notification";
+    }
+
+    @GetMapping("/seller")
+    public String notificationSellerPage() {
+        return "notification/notification_seller";
     }
 }
