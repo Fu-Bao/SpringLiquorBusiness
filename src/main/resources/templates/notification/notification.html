@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    @import url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff");
+
+    .notosanskr * {
+      font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .pretendard {
+      font-family: "Pretendard", pretendard-Regular;
+    }
+
+    * {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div class="flex justify-between mb-[8px]">
+  <div class="ps-[16px] flex" style="height: 48px">
+    <img
+            class="mr-[24px]"
+            src="/index/뒤로가기.svg"
+            alt=""
+            width="24px"
+            height="24px"
+            onclick="location.href='javascript:history.back();'"
+    />
+    <p
+            class="text-[#111111] my-[14px] text-[17px] font-medium pretendard"
+            style="line-height: 20.4px"
+    >
+      알림
+    </p>
+  </div>
+  <div class="pe-[16px] flex">
+    <p class="text-[#666666] my-[14px] text-[14px]">모두읽음</p>
+  </div>
+</div>
+<div class="justify-start">
+  <div
+          class="ps-[16px] flex mt-[1px] my-[12px] mx-[4px]"
+          style="height: 44px"
+  >
+    <button class="border-b-[2px] border-[#111111] font-semibold">
+      전체
+    </button>
+    <button class="ps-[20px] text-[#d3d3d3]">커뮤니티</button>
+    <button class="ps-[20px] text-[#d3d3d3]">구매</button>
+    <button class="ps-[20px] text-[#d3d3d3]">공지사항</button>
+  </div>
+</div>
+</body>
+</html>
