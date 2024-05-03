@@ -1,4 +1,4 @@
-package com.github.springliquorbusiness.domain.payment;
+package com.github.springliquorbusiness.domain.payment.controller;
 
 
 import org.springframework.stereotype.Controller;
@@ -20,5 +20,8 @@ public class PaymentController {
         return "payment/payment_info";
     }
 
-
+    @GetMapping("/delivery")
+    public String paymentDelivery() {
+        return "payment/payment_delivery";
+    }
 }

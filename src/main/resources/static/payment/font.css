@@ -1,0 +1,42 @@
+@import url(/./fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+    font-family: "Noto Sans KR";
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url("./font/Pretendard-SemiBold.woff2") format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pretendard-sb {
+    font-family: 'Pretendard-SemiBold';
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('./font/Pretendard-Regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pretendard-reg {
+    font-family: 'Pretendard-Regular';
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('./font/Pretendard-Medium.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pretendard-mid {
+    font-family: 'Pretendard-Medium';
+}

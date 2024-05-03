@@ -1,108 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>결제 상세 정보</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <title>결제 상세 정보</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        
-        <link rel="stylesheet" href="/index/font.css" />
-        <link rel="stylesheet" href="/index/button.css" />
-    </head>
-    <body>
-        <div class="relative w-full h-12 text-center">
-            <div class="self-center absolute left-4 top-3">
-                <img src="/index/뒤로가기.svg" alt="닫기" class="w-6 h-6" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="/index/font.css"/>
+    <link rel="stylesheet" href="/index/button.css"/>
+</head>
+<body>
+<div class="relative w-full h-12 text-center">
+    <div class="self-center absolute left-4 top-3">
+        <img src="/index/뒤로가기.svg" alt="닫기" class="w-6 h-6" onclick="location.href='javascript:history.back();'"/>
+    </div>
+    <div class="pt-3">
+        <p class="pretendard-mid text-[17px]">결제 상세 정보</p>
+    </div>
+</div>
+
+<div class="px-4 py-6">
+    <div class="pb-5">
+        <p class="pretendard-mid text-[16px]">상품정보</p>
+    </div>
+
+    <div class="flex items-center">
+        <img src="/index/Rectangle 3467739.png" width="48px" height="48px"/>
+        <div class="ml-3">
+            <p class="pretendard-reg text-[14px]">상품명 소주 상품명</p>
+            <p class="pretendard-sb text-[14px]">5,500,000원</p>
+        </div>
+    </div>
+
+    <div class="flex mt-4 gap-2">
+        <div class="flex border w-full border-[#D3D3D3] rounded-md py-[14px] justify-center ">
+            <p class="pretendard-mid text-[#111]">배송조회</p>
+        </div>
+        <div class="flex border w-full border-[#558EFC] rounded-md py-[14px] justify-center ">
+            <p class="pretendard-mid text-[#558EFC]">구매 확정</p>
+        </div>
+    </div>
+
+    <div class="flex mt-6">
+        <p class="pretendard-reg text-[13px] text-[#999]">수령한 상품에 문제가 있나요?</p>
+        <p class="pretendard-reg text-[13px] text-[#999] underline ml-[2px]">반품신청</p>
+    </div>
+</div>
+
+<div class="w-full h-2 bg-[#F4F4F4]"></div>
+
+<div class="px-4 py-6">
+    <div>
+        <p class="pretendard-mid text-[16px]">거래정보</p>
+
+        <div class="flex gap-6 mt-5">
+            <div class="grid gap-4 pretendard-reg text-[15px] text-[#999]">
+                <p>거래방법</p>
+                <p>거래번호</p>
+                <p>결제일시</p>
+                <p>결제수단</p>
+                <p>상품금액</p>
+                <p>배송비</p>
+                <p>수수료</p>
             </div>
-            <div class="pt-3">
-                <p class="pretendard-mid text-[17px]">결제 상세 정보</p>
+            <div class="grid gap-4 pretendard-reg text-[15px] text-[#444]">
+                <p>택배거래</p>
+                <p>12345678</p>
+                <p>2023.06.30 23:27</p>
+                <p>신용카드 / 삼성카드</p>
+                <p>5,500,000원</p>
+                <p>3,000원</p>
+                <p>55,000원</p>
             </div>
         </div>
+    </div>
+    <hr class="my-6">
+    <div class="flex items-center">
+        <p class="pretendard-mid text-[16px] text-[#111]">총 결제 금액</p>
+        <p class="ml-5 pretendard-sb text-[18px] text-[#111]">5,558,000원</p>
+    </div>
+</div>
 
-        <div class="px-4 py-6">
-            <div class="pb-5">
-                <p class="pretendard-mid text-[16px]">상품정보</p>
-            </div>
+<div class="w-full h-2 bg-[#F4F4F4]"></div>
 
-            <div class="flex items-center">
-                <img src="/index/Rectangle 3467739.png" width="48px" height="48px" />
-                <div class="ml-3">
-                    <p class="pretendard-reg text-[14px]">상품명 소주 상품명</p>
-                    <p class="pretendard-sb text-[14px]">5,500,000원</p>
-                </div>
-            </div>
+<div class="mx-4 my-6">
+    <p class="pretendard-mid text-[16px] text-[#111]">배송정보</p>
 
-            <div class="flex mt-4 gap-2">
-                <div class="flex border w-full border-[#D3D3D3] rounded-md py-[14px] justify-center ">
-                    <p class="pretendard-mid text-[#111]">배송조회</p>
-                </div>
-                <div class="flex border w-full border-[#558EFC] rounded-md py-[14px] justify-center ">
-                    <p class="pretendard-mid text-[#558EFC]">구매 확정</p>
-                </div>
-            </div>
-
-            <div class="flex mt-6">
-                <p class="pretendard-reg text-[13px] text-[#999]">수령한 상품에 문제가 있나요?</p>
-                <p class="pretendard-reg text-[13px] text-[#999] underline ml-[2px]">반품신청</p>
-            </div>
+    <div class="flex mt-5 gap-6 pretendard-reg text-[15px]">
+        <div class="grid gap-4 text-[#999]">
+            <p>택배사</p>
+            <p>송장번호</p>
+            <p>수령인</p>
+            <p>연락처</p>
+            <p>배송지</p>
         </div>
-
-        <div class="w-full h-2 bg-[#F4F4F4]"></div>
-
-        <div class="px-4 py-6">
-            <div>
-                <p class="pretendard-mid text-[16px]">거래정보</p>
-
-                <div class="flex gap-6 mt-5">
-                    <div class="grid gap-4 pretendard-reg text-[15px] text-[#999]">
-                        <p>거래방법</p>
-                        <p>거래번호</p>
-                        <p>결제일시</p>
-                        <p>결제수단</p>
-                        <p>상품금액</p>
-                        <p>배송비</p>
-                        <p>수수료</p>
-                    </div>
-                    <div class="grid gap-4 pretendard-reg text-[15px] text-[#444]">
-                        <p>택배거래</p>
-                        <p>12345678</p>
-                        <p>2023.06.30 23:27</p>
-                        <p>신용카드 / 삼성카드</p>
-                        <p>5,500,000원</p>
-                        <p>3,000원</p>
-                        <p>55,000원</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-6">
-            <div class="flex items-center">
-                <p class="pretendard-mid text-[16px] text-[#111]">총 결제 금액</p>
-                <p class="ml-5 pretendard-sb text-[18px] text-[#111]">5,558,000원</p>
-            </div>
+        <div class="grid gap-4 text-[#444]">
+            <p>대한통운</p>
+            <p>37419207485</p>
+            <p>김민제</p>
+            <p>01012345678</p>
+            <p>대구광역시 달서구 조암로 6길 20 (월성푸르지오)110동 1111호</p>
         </div>
-
-        <div class="w-full h-2 bg-[#F4F4F4]"></div>
-
-        <div class="mx-4 my-6">
-            <p class="pretendard-mid text-[16px] text-[#111]">배송정보</p>
-
-            <div class="flex mt-5 gap-6 pretendard-reg text-[15px]">
-                <div class="grid gap-4 text-[#999]">
-                    <p>택배사</p>
-                    <p>송장번호</p>
-                    <p>수령인</p>
-                    <p>연락처</p>
-                    <p>배송지</p>
-                </div>
-                <div class="grid gap-4 text-[#444]">
-                    <p>대한통운</p>
-                    <p>37419207485</p>
-                    <p>김민제</p>
-                    <p>01012345678</p>
-                    <p>대구광역시 달서구 조암로 6길 20 (월성푸르지오)110동 1111호</p>
-                </div>
-            </div>
-        </div>
-    </body>
+    </div>
+</div>
+</body>
 </html>

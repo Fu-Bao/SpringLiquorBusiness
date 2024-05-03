@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+      }
+      .notosanskr * {
+        font-family: "Pretendard-Regular", sans-serif;
+      }
+
+      * {
+        font-family: "Pretendard-Regular";
+      }
+      html, body {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .chip-fade-right {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, #FFFFFF 22.4%, #FFFFFF 100%);
+      }
+      .chip-container::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- 타이틀바 -->
+    <div id="Topbar" class="top-0 select-none sticky flex-1 flex flex-col">
+      <nav class="h-[48px] flex justify-between bg-white px-[16px]">
+        <ul class="flex items-center">
+          <!-- 왼쪽 아이콘 -->
+          <li>
+            <!-- 뒤로가기 -->
+            <img src="/index/뒤로가기.svg"/>
+          </li>
+        </ul>
+        <!-- 중간 타이틀 -->
+        <ul class="flex items-center">
+          <li>
+            <p class="lg:pl-0 text-black font-medium text-[17px]">상품명 소주 상품명</p>
+          </li>
+        </ul>
+        <div class="w-[24px]"></div>
+      </nav>
+    </div>
+
+    <div class="h-[92px] flex px-[16px] items-center flex-wrap justify-between">
+
+      <p class="text-[16px] font-semibold text-black">문의내역 <span class="text-gray-400">999+</span></p>
+      <button
+        class="rounded-[6px] text-[13px] bg-[#FC6955] text-medium text-white px-[12px] py-[8px] w-fit"
+      >
+        문의하기
+      </button>
+    </div>
+
+    <div id="AskList" class="pt-[20px] pb-[18px] flex flex-col gap-[20px] px-[21px]">
+      <div id="Ask">
+        <p class="text-medium text-[12px] text-[#999999] mb-[8px]">상품문의</p>
+        <div class="flex gap-[8px] mb-[19px]">
+          <!-- 보이는 여부 설정 가능 -->
+          <img class="mt-[2px] h-fit" width="16" height="16" src="/index/lock.svg">
+          <p class="text-regular text-[14px] text-[#111111]">문의사항이있습니다</p>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-medium text-[12px] text-[#999999]">왈랑** · 2023.12.30</p>
+          <p class="text-medium text-[13px] text-[#999999]">답변대기중</p>
+        </div>
+      </div>
+      <!-- 디바이더 -->
+      <div class="bg-[#F4F4F4] w-full h-[1px]"></div>
+      <div id="Ask">
+        <p class="text-medium text-[12px] text-[#999999] mb-[8px]">상품문의</p>
+        <div class="flex gap-[8px] mb-[19px]">
+          <!-- 보이는 여부 설정 가능 -->
+          <img class="mt-[2px] h-fit" width="16" height="16" src="/index/lock.svg">
+          <p class="text-regular text-[14px] text-[#111111]">문의사항이있습니다</p>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-medium text-[12px] text-[#999999]">왈랑** · 2023.12.30</p>
+          <p class="text-medium text-[13px] text-[#FC6955]">답변완료</p>
+        </div>
+      </div>
+      <!-- 디바이더 -->
+      <div class="bg-[#F4F4F4] w-full h-[1px]"></div>
+      <div id="Ask">
+        <p class="text-medium text-[12px] text-[#999999] mb-[8px]">배송문의</p>
+        <div class="flex gap-[8px] mb-[19px]">
+          <p class="text-regular text-[14px] text-[#111111]">문의사항이있습니다</p>
+        </div>
+        <div class="flex justify-between">
+          <p class="text-medium text-[12px] text-[#999999]">왈랑** · 2023.12.30</p>
+          <p class="text-medium text-[13px] text-[#FC6955]">답변완료</p>
+        </div>
+      </div>
+      
+    </div>
+
+  </body>
+</html>

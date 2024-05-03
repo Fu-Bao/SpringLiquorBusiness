@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/payment/delivery.css"/>
+    <link rel="stylesheet" href="/payment/font.css"/>
+</head>
+<body>
+<header>
+    <div class="box">
+        <button class="backBtn" onclick="location.href='javascript:history.back();'">
+            <img id="backBtnIcon" src="/payment/img/ic.svg">
+        </button>
+        <div class="header-text">신규 배송지 추가</div>
+    </div>
+</header>
+<div class="HeadLine">
+    배송지 정보
+</div>
+<div class="RecipientName">
+    <div class="pretendard-mid RecipientFont">
+        받는사람
+    </div>
+    <input id="TextBox1" type="text" placeholder="이름을 입력해주세요."/>
+</div>
+<div class="RecipientNumber">
+    <div class="pretendard-mid RecipientFont">
+        받는사람 연락처
+    </div>
+    <input id="TextBox2" type="tel" placeholder="받으실 분 연락처를 입력해주세요." pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required/>
+</div>
+<div class="DeliveryAddress">
+    <div class="pretendard-mid AddressFont">
+        배송지입력
+    </div>
+    <input id="TextBox4" type="text" onclick="callPostcode() " readonly/>
+    <div class="ButtBox3" onclick="callPostcode() ">
+        주소 검색
+    </div>
+    <input id="TextBox5" type="text" onclick="callPostcode() " readonly/>
+    <input id="TextBox6" type="text" placeholder="상세주소를 입력해주세요."/>
+</div>
+<div class="RecipientRequest">
+    <div class="pretendard-mid RecipientFont">
+        배송 요청사항
+    </div>
+    <input id="TextBox3" type="text" placeholder="배송 시 요청 사항을 입력해주세요."/>
+</div>
+<div class="ButtBox2">
+    <button class="PlusButt" id="btn">
+        배송지 추가
+    </button>
+</div>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    const btn = document.querySelector('#btn')
+    btn.addEventListener('click', function () {
+        window.scrollBy({})
+    })
+
+    function callPostcode() {
+        new daum.Postcode({
+            oncomplete: function (data) {
+                document.getElementById('TextBox4').value = data.zonecode;
+                document.getElementById('TextBox5').value = data.address;
+                document.getElementById('TextBox6').focus();
+            }
+        }).open();
+    }
+</script>
+</body>
+</html>
