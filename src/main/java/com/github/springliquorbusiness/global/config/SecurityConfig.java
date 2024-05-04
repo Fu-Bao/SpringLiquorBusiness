@@ -53,6 +53,7 @@ public class SecurityConfig {
                 .rememberMe(AbstractHttpConfigurer::disable)
                 // 세션 X
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .authorizeHttpRequests((authorize) -> authorize.anyRequest().permitAll())
                 // 로그아웃 설정
                 .logout((logout) -> logout
                         .logoutUrl("/logout").permitAll()

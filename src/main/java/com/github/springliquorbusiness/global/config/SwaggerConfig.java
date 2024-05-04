@@ -7,15 +7,16 @@ import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
 import io.swagger.v3.oas.models.security.SecurityScheme;
 import lombok.RequiredArgsConstructor;
-import org.springdoc.core.GroupedOpenApi;
+import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @OpenAPIDefinition(
         info = @Info(title = "양조술사 swagger API 명세서",
                 description = "양조술사 API 명세서",
-                version = "v3"),
-        servers = {@Server(url = "https://api.yangjo.kr", description = "Default Server URL")})
+                version = "v3")
+//        servers = {@Server(url = "https://api.yangjo.kr", description = "Default Server URL")}
+)
 @RequiredArgsConstructor
 @Configuration
 public class SwaggerConfig {

@@ -33,7 +33,7 @@ public class UserService {
 
     public MyProfileDto getMyPage(String email) {
         UserEntity user = userRepository.findByEmail(email).orElseThrow(
-                () -> new RuntimeException("user X")
+                () -> new RuntimeException("user not found")
         );
 
         return MyProfileDto.toMyPageMainDto(user);
