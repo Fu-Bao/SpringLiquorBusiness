@@ -1,6 +1,7 @@
 package com.github.springliquorbusiness.domain.user.service;
 
 import com.github.springliquorbusiness.domain.user.dto.LoginDto;
+import com.github.springliquorbusiness.domain.user.dto.MyProfileDto;
 import com.github.springliquorbusiness.domain.user.dto.SignupDto;
 import com.github.springliquorbusiness.domain.user.entity.UserEntity;
 import com.github.springliquorbusiness.domain.user.repository.UserRepository;
@@ -17,12 +18,12 @@ public class UserService {
     public void signup(SignupDto signupDto) {
         // 유저 name 중복 확인
         if (userRepository.existsByUsername(signupDto.getUsername())) {
-            throw new RuntimeException("안돼");
+            throw new RuntimeException("user not found");
         }
 
         // 유저 email 중복 확인
         if (userRepository.existsByEmail(signupDto.getEmail())) {
-            throw new RuntimeException("안돼");
+            throw new RuntimeException("user not found");
         }
 
         UserEntity user = UserEntity.SignupToEntity(signupDto);
@@ -30,9 +31,11 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public void login(LoginDto loginDto) {
-        userRepository.findByEmail(loginDto.getEmail()).orElseThrow(
-                () -> new ArithmeticException("안돼")
+    public MyProfileDto getMyPage(String email) {
+        UserEntity user = userRepository.findByEmail(email).orElseThrow(
+                () -> new RuntimeException("user X")
         );
+
+        return MyProfileDto.toMyPageMainDto(user);
     }
 }
