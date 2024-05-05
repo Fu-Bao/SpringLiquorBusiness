@@ -1,11 +1,16 @@
 package com.github.springliquorbusiness.domain.user.entity;
 
+import com.github.springliquorbusiness.domain.address.entity.AddressEntity;
 import com.github.springliquorbusiness.domain.user.dto.SignupDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "users")
 @Builder
@@ -35,6 +40,21 @@ public class UserEntity {
 
     @Column(name = "refresh_token")
     private String refreshToken;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<AddressEntity> addresses = new ArrayList<>();
+
+    // 비밀번호 암호화
+    public void passwordEncode(PasswordEncoder passwordEncoder) {
+        this.password = passwordEncoder.encode(this.password);
+    }
+
+    // 여러 배송지들 중에서 하나만 기본 배송지 설정
+    public void setDefaultAddress(AddressEntity defaultAddress) {
+        for (AddressEntity address : addresses) {
+            address.setIsDefault(address.equals(defaultAddress));
+        }
+    }
 
     public void initRefreshToken(String refreshToken) {
         this.refreshToken = refreshToken;
