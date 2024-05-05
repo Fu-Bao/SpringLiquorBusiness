@@ -19,8 +19,9 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping("/product")
-    public ResponseEntity<?> findProductByCategoryAndRegionAll(@RequestParam String category, @RequestParam String region) {
+    public ResponseEntity<?> findAllProductByCategoryAndRegion(@RequestParam(required = false) String category, @RequestParam(required = false) String region) {
         List<ResProductDto> responseEntities = productService.productGetByCategoryOrRegion(category, region);
-        return ResponseEntity.ok(responseEntities);
+        return ResponseEntity.ok().body(responseEntities);
     }
+
 }
