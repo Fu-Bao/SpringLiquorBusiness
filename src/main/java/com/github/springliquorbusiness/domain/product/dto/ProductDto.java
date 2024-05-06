@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ResProductDto {
+public class ProductDto {
     private String name;
     private String description;
     private int price;
@@ -20,8 +20,8 @@ public class ResProductDto {
     private String category;
     private String region;
 
-    public static ResProductDto entityToDto(ProductEntity product) {
-        return ResProductDto.builder()
+    public static ProductDto entityToDto(ProductEntity product) {
+        return ProductDto.builder()
                 .name(product.getName())
                 .description(product.getDescription())
                 .price(product.getPrice())

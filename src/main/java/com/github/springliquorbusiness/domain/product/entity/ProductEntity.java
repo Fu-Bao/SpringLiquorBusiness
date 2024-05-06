@@ -37,5 +37,4 @@ public class ProductEntity {
 
     private String region;
 
-
 }

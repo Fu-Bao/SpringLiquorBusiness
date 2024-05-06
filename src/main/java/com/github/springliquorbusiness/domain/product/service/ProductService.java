@@ -1,6 +1,6 @@
 package com.github.springliquorbusiness.domain.product.service;
 
-import com.github.springliquorbusiness.domain.product.dto.ResProductDto;
+import com.github.springliquorbusiness.domain.product.dto.ProductDto;
 import com.github.springliquorbusiness.domain.product.entity.ProductEntity;
 import com.github.springliquorbusiness.domain.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
@@ -14,9 +14,9 @@ public class ProductService {
 
     private final ProductRepository productRepository;
 
-    public List<ResProductDto> productGetByCategoryOrRegion(String category, String region) {
+    public List<ProductDto> productGetByCategoryOrRegion(String category, String region) {
         List<ProductEntity> productList = productRepository.findAllByCategoryOrRegion(category, region);
 
-        return productList.stream().map(ResProductDto::entityToDto).toList();
+        return productList.stream().map(ProductDto::entityToDto).toList();
     }
 }
